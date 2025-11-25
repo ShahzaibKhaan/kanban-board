@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'poppins';
+}
+
+main {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+:root {
+    --bg-color: #000000;
+    --primary-text-color: #ffffff;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    color: var(--primary-text-color);
+}
+
+.header-sect {
+    padding: 20px 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0 0;
+}
+
+.header button {
+    font-size: 20px;
+    border: 1px solid rgb(196, 196, 196);
+    background-color: rgb(253, 253, 249);
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    padding: 12px 30px 13px 30px;
+    border-radius: 20px;
+}
+
+/* hero sect */
+.hero-sect {
+    padding: 10px 0 20px 0;
+    display: flex;
+    background-color: rgb(78, 77, 77);
+    flex-grow: 1;
+}
+
+/* .to-do.hover-over {
+    scale: 1.02;
+    border: 2px dashed white;
+
+}
+
+.hero-sect .in-progress.hover-over {
+    scale: 1.02;
+    border: 2px dashed white;
+
+} */
+
+.hero-sect .box.hover-over {
+    scale: 1.05;
+    border: 1px dashed white;
+}
+.head-top {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+.box {
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    background-color: #242323;
+    transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.task {
+
+    cursor: pointer;
+    margin: 20px 0 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(73, 71, 71);
+}
+.task button {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: rgb(255, 78, 78);
+    border: 2px solid rgb(255, 99, 78);
+    border-radius: 5px;
+    padding: 5px 20px 5px 20px;
+    align-self: flex-end;
+}
