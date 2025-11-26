@@ -13,8 +13,12 @@ h4,
 h5,
 h6 {
     font-family: 'poppins';
+    font-size: 18px;
 }
-
+p{
+    font-family: 'poppins';
+    font-size: 15px;
+}
 main {
     display: flex;
     height: 100%;
@@ -45,7 +49,7 @@ html {
 }
 
 .header button {
-    font-size: 20px;
+    font-size: 16px;
     border: 1px solid rgb(196, 196, 196);
     background-color: rgb(253, 253, 249);
     color: rgb(0, 0, 0);
@@ -62,27 +66,22 @@ html {
     flex-grow: 1;
 }
 
-/* .to-do.hover-over {
-    scale: 1.02;
-    border: 2px dashed white;
-
+.hero-sect h5 {
+    font-size: 18px;
+    font-weight: 600;
 }
-
-.hero-sect .in-progress.hover-over {
-    scale: 1.02;
-    border: 2px dashed white;
-
-} */
 
 .hero-sect .box.hover-over {
     scale: 1.05;
     border: 1px dashed white;
 }
+
 .head-top {
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
 }
+
 .box {
     margin-top: 20px;
     border-radius: 10px;
@@ -90,8 +89,8 @@ html {
     background-color: #242323;
     transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
 }
-.task {
 
+.task {
     cursor: pointer;
     margin: 20px 0 10px 0;
     padding: 10px;
@@ -100,10 +99,11 @@ html {
     flex-direction: column;
     background-color: rgb(73, 71, 71);
 }
+
 .task button {
     color: white;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 15px;
     background-color: rgb(255, 78, 78);
     border: 2px solid rgb(255, 99, 78);
     border-radius: 5px;
