@@ -32,13 +32,13 @@ function addDragEventOnColumn(column) {
 
         column.appendChild(dragElement)
         column.classList.remove("hover-over");
+     
+        const colom =[todo , progress, complete];
+        colom.forEach (col => {
+            let tasks = col.querySelectorAll(".task");
+            let count = col.querySelector(".right");
 
-        [todo, progress, complete].forEach (col =>{
-            const tasks = col.querySelectorAll(".task");
-            const count = col.querySelector(".right");
-
-            
-             count.innerHTML= tasks.length;
+             count.innerHTML = tasks.length;
         })
     })
 }
@@ -112,6 +112,7 @@ newTask.addEventListener('click', function () {
                                 `
 
     todo.appendChild(div);
+
     const dlt = document.querySelector('.task');
     const removeBtn = document.querySelector('#remove-btn')
     function deleteBox(box) {
@@ -119,14 +120,18 @@ newTask.addEventListener('click', function () {
             dlt.remove("task");
         })
     }
-    [todo, progress, complete].forEach (col =>{
+
+    const counter = [todo, progress, complete];
+    counter.forEach (col =>{
         const tasks = col.querySelectorAll(".task");
-        const count = col.querySelectorAll(".right");
+        const count = col.querySelector(".right");
 
          count.innerHTML= tasks.length;
     })
+
+    
     deleteBox(removeBtn);
     div.addEventListener("drag" ,(e) =>{
-        dragElement =div;
+        dragElement = div;
     })
 });
