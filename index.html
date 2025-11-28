@@ -20,7 +20,7 @@
                     <div class="col-12">
                         <div class="header">
                             <h2>Kanban Board</h2>
-                            <button>Add new task</button>
+                            <button id="openPopupBtn" >Add new task</button>
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                         <div id="pending" class="box flex-grow-1">
                             <div class="head-top">
                                 <h5>To Do</h5>
-                                <h5>Count</h5>
+                                <h5 class="right">Count</h5>
                             </div>
 
                         </div>
@@ -42,12 +42,12 @@
                         <div id="progress" class="box flex-grow-1">
                             <div class="head-top">
                                 <h5>In progress</h5>
-                                <h5>Count</h5>
+                                <h5 class="right" >Count</h5>
                             </div>
                             <div draggable="true" class="task">
                                 <h3> Task-1 </h3>
                                 <p>Description for Task</p>
-                                <button>Delete</button>
+                                <button id="remove-btn">Delete</button>
                             </div>
                         </div>
                     </div>
@@ -55,14 +55,29 @@
                         <div id="complete" class="box flex-grow-1">
                             <div class="head-top">
                                 <h5>Done</h5>
-                                <h5>Count</h5>
+                                <h5 class="right" >Count</h5>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="popup-sect">
+            <div id="overlay" class="overlay"></div>
+            <div id="popup" class="popup">
+                <button id="closePopupBtn">x</button>
+                <div class="popup-header">
+                    <input class="title" type="text" placeholder="Title">
+                    <!-- <input class="discription" type="text" placeholder="Discription"> -->
+                     <textarea name="" id="discription" placeholder="Discription"></textarea>
+                </div>
+                <div class="popup-body">
+                    <button id="new-task">Add</button>
+                </div>
+            </div>
+        </section>
     </main>
+
     <script src="/assets/js/script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
